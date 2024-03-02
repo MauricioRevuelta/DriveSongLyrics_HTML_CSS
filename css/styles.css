@@ -1,0 +1,41 @@
+.gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gloria Hallelujah", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    background-color: rgba(36,204,213,255);
+    width: 100%;
+}
+
+header img {
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
