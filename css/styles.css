@@ -4,29 +4,70 @@
     font-style: normal;
 }
 
+.over-the rainbow-regular {
+    font-family: "Over the Rainbow", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 html{
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Gloria Hallelujah", sans-serif;
+    font-family: "Gloria Hallelujah", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    isolation: isolate;
+    position: relative;
+    overflow-x: hidden;
+
 }
 
 header {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    background-color: rgba(36,204,213,255);
+    align-items: center;
+    background-color: rgba(36, 204, 213, 1);
+    background-image: -webkit-radial-gradient(top, circle cover,  rgb(158, 233, 237) 0%, rgba(36, 204, 213, 0.8) 80%);
+    background-image: -moz-radial-gradient(top, circle cover, rgb(158, 233, 237) 0%, rgba(36, 204, 213, 0.8) 80%);
+    background-image: -o-radial-gradient(top, circle cover, rgb(158, 233, 237) 0%, rgba(36, 204, 213, 0.8) 80%);
+    background-image: radial-gradient(top, circle cover, rgb(158, 233, 237) 0%, rgba(36, 204, 213, 0.8) 80%);
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 250%;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+header p {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-shadow: .5px .5px .5px black;
 }
 
 header img {
-    margin: 10px; /* Adjust the margin as needed */
+    margin: 0;
+    margin-top: 22px;
 }
 
 .title {
     font-weight: bold;
     text-align: center;
+    margin-bottom: 0;
+    margin-left: 250px;
+    font-size: large;
 }
 
 .column {
@@ -38,4 +79,73 @@ header img {
     content: "";
     display: table;
     clear: both;
+}
+
+.chorus{
+    font-family: "Over the Rainbow", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    text-align: left;
+    width: 100%;
+    letter-spacing: 1px;
+    color: black;
+    font-size: large;
+    text-shadow: .5px .5px .5px black;
+    margin-left: 8rem;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: pink;
+    z-index: -1;
+    opacity: .6;
+}
+
+.verse p::first-letter,
+.chorus p::first-letter {
+    font-size: 200%; /* Increase the font size of the first letter */
+    color: rgb(71, 64, 93); /* Example: Blue color for the first letter */
+    font-weight: bolder;
+}
+
+footer{
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    text-justify: auto;
+    width: 100%;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+}
+
+.love{
+    font-weight: bold;
+    color: rgb(159, 5, 5);
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-decoration-color: rgb(159, 5, 5);
+    font-size: 1.5rem;
+}
+
+.cry{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.enough{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.drive {
+    font-size: 2rem;
+    text-decoration: rgb(71, 64, 93) wavy underline;
+}
+
+footer a{
+    margin-right: 30px;
 }
